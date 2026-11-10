@@ -1,0 +1,9 @@
+model,evaluation,mae,rmse,r2,mae_vs_naive_pct,mae_label,change_label
+Naive (last 7 days),Cross-validation (2018–2025),56.9,72.66,0.55,0.0,56.9,baseline
+Linear regression,Cross-validation (2018–2025),42.81,55.15,0.74,-24.76,42.8,−25%
+Random forest,Cross-validation (2018–2025),47.42,61.05,0.68,-16.65,47.4,−17%
+Gradient boosting,Cross-validation (2018–2025),45.31,58.24,0.71,-20.37,45.3,−20%
+Naive (last 7 days),Test (2026),82.02,105.04,0.28,0.0,82.0,baseline
+Linear regression,Test (2026),54.81,73.94,0.64,-33.18,54.8,−33%
+Random forest,Test (2026),76.83,111.16,0.19,-6.32,76.8,−6%
+Gradient boosting,Test (2026),78.28,115.34,0.13,-4.56,78.3,−5%

@@ -1,0 +1,5 @@
+metric,label,description
+extra_missions_per_hot_day,+90,more EMS missions on hot days
+extra_missions_per_summer,"≈1,600",more EMS missions on hot days in an average summer
+extra_missions_per_degree,+11,more EMS missions per additional °C
+response_time_hot_day,+17 s,higher average daily median response time on hot days
