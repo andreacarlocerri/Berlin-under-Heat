@@ -4,7 +4,9 @@
 
 This project combines Berlin Fire Brigade open data with German Weather Service (DWD) temperatures and heat warnings for nine summers (June–August, 2018–2026, 822 days). Final project of the Ironhack Data Analytics bootcamp, November 2026.
 
-**Presentation:** [Google Slides](https://docs.google.com/presentation/d/1J_nluQEh-emjAAwGcj0BujNLPgTtDF0KSau5bILdi2s/edit)
+**Presentation:** [Google Slides](https://docs.google.com/presentation/d/1N-xmSMpJOtyMYb7xWUeDEqQ-kdMrranp8ifUUBq_TRY/edit)
+
+**Project files:** [38-second film](Berlin_Under_Heat_Final_Film.webm) · [Packaged Tableau workbook](tableau/Berlin-under-Heat_forecast.twbx)
 
 ## Research questions
 
@@ -16,13 +18,13 @@ This project combines Berlin Fire Brigade open data with German Weather Service 
 
 ## Key findings
 
-- **Hot days are busier.** EMS demand is about 7% higher on hot days: +7.1 index points (95% CI 5.9–8.2) after adjusting for year, month and weekday.
+- **Hot days were associated with about 90 more EMS missions per day** after adjusting for year, month and weekday (95% CI 74–105).
+- **Indexed demand was higher on hot days.** EMS demand is about 7% higher on hot days: +7.1 index points (95% CI 5.9–8.2) after adjusting for year, month and weekday.
 - **The pattern is consistent.** Hot days had higher demand in all nine summers, and the result barely changes when 2026 and its record heatwave are excluded.
-- **In absolute terms, hot days are associated with about 90 more EMS missions a day** (95% CI 74–105), which adds up to roughly 1,600 in an average summer.
 - **Response times are longer.** The average daily median response time for critical EMS missions is about 17 seconds higher on hot days (95% CI 14–20), and it was higher in all nine summers.
-- **Demand rises gradually.** Each additional °C is associated with about +0.8 index points. There is no sharp threshold at 30°C.
+- **Demand rises gradually.** Each additional °C is associated with about +0.8 index points. The temperature bands show no clear break at 30°C in this sample.
 - **Warnings add little beyond temperature.** 72 of 155 hot days had no DWD heat warning and still showed higher demand. Once temperature is accounted for, a warning is not significantly associated with additional demand (+1.3 points, p = 0.23).
-- **Heat is the temperature that matters.** In a descriptive full-year comparison, demand stays close to the yearly average on days below 25°C and is higher only above.
+- **Full-year context.** Mean EMS demand was higher in warmer temperature bands in the descriptive full-year comparison.
 - **A forecast experiment works.** Given the measured temperature of the day, a linear regression predicts next-day demand with an average error of 42.8 missions in cross-validation, against 56.9 for a naive forecast. On the unseen summer of 2026 the error is 54.8 against 82.0. With a simulated temperature error of about 2°C it rises to about 58. The model has not been tested with real weather forecasts.
 
 All results are associations from observational data, not proof of cause and effect.
@@ -63,7 +65,17 @@ tableau/         dashboard workbook and its data files
 
 Run the notebooks in order from the `notebooks` folder. Notebook 01 can be skipped, because the raw files are included in the repository.
 
-Requirements: Python 3 with pandas, numpy, matplotlib, seaborn, scipy, statsmodels, scikit-learn and requests.
+Use Python 3.14.7, the version used for the reproducibility check. From the repository root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cd notebooks
+python -m notebook
+```
+
+Start at notebook 02 to reproduce the bundled snapshot. Notebook 01 refreshes the raw inputs from live sources.
 
 ## Tools
 
