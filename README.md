@@ -6,7 +6,7 @@ This project combines Berlin Fire Brigade open data with German Weather Service 
 
 **Presentation:** [Google Slides](https://docs.google.com/presentation/d/1N-xmSMpJOtyMYb7xWUeDEqQ-kdMrranp8ifUUBq_TRY/edit)
 
-**Project files:** [Film](Berlin_Under_Heat_Final_Film.webm) · [Packaged Tableau workbook](tableau/Berlin-under-Heat_forecast.twbx)
+**Project files:** [Film](Berlin_Under_Heat_65s.mp4) · [Packaged Tableau workbook](tableau/Berlin-under-Heat_forecast.twbx)
 
 ## Research questions
 
