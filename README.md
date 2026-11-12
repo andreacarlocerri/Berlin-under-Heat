@@ -6,7 +6,7 @@ This project combines Berlin Fire Brigade open data with German Weather Service 
 
 **Presentation:** [Google Slides](https://docs.google.com/presentation/d/1N-xmSMpJOtyMYb7xWUeDEqQ-kdMrranp8ifUUBq_TRY/edit)
 
-**Project files:** [38-second film](Berlin_Under_Heat_Final_Film.webm) · [Packaged Tableau workbook](tableau/Berlin-under-Heat_forecast.twbx)
+**Project files:** [Film](Berlin_Under_Heat_Final_Film.webm) · [Packaged Tableau workbook](tableau/Berlin-under-Heat_forecast.twbx)
 
 ## Research questions
 
@@ -48,7 +48,7 @@ data/raw/        downloaded source files
 data/clean/      cleaned tables, including daily_summer.csv (one row per day)
 notebooks/       analysis, in order (see below)
 figures/         charts saved by the notebooks
-tableau/         dashboard workbook and its data files
+tableau/         dashboard workbook (open Berlin-under-Heat_forecast.twbx) and its data files
 ```
 
 | Notebook | Content |
